@@ -7,7 +7,6 @@ const createProduct = async (reqBody) => {
 
 /**get product list */
 const getProductList = async () => {
-    // return Product.find();
     return Product.find().populate('category')
 }
 
